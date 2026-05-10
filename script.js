@@ -4,86 +4,139 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const searchInput = document.getElementById('search-input');
 
-    // 1. Inject Data and Fix Image Paths
-    if (typeof reportData !== 'undefined') {
-        let html = reportData;
-        
-        // Fix image paths to point to our local web/images folder
-        // And replace INSET with FINAL or non-inset as requested
-        html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_social_map_INSET\.png/g, 'images/T$1_social_map_FINAL.png');
-        html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_people_inset\.png/g, 'images/T$1_people_map.png');
-        html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_organizations_inset\.png/g, 'images/T$1_organizations_map.png');
-        
-        // Handle any other absolute paths that might slip through
-        html = html.replace(/\/Volumes\/.*?\/networks\//g, 'images/');
-        
-        contentArea.innerHTML = html;
-    } else {
-        contentArea.innerHTML = '<p>Error: Report data not found.</p>';
+    let isTLDR = false;
+    const toggleViewBtn = document.getElementById('toggle-view-btn');
+
+    function render() {
+        if (isTLDR) {
+            renderTLDR();
+        } else {
+            renderDetailed();
+        }
+        generateSidebar();
     }
 
-    // 2. Generate Collapsible Sidebar Navigation
-    const headings = contentArea.querySelectorAll('h2, h3');
-    navLinks.innerHTML = ''; // Clear existing
-    
-    let currentThemeContainer = null;
-    let currentThemeList = null;
-    
-    headings.forEach((heading, index) => {
-        const title = heading.textContent;
-        const id = 'heading-' + index;
-        heading.id = id; // Assign ID for anchor link
-        
-        if (heading.tagName === 'H2') {
-            const group = document.createElement('div');
-            group.className = 'theme-group';
+    function renderDetailed() {
+        if (typeof reportData !== 'undefined') {
+            let html = reportData;
             
-            const a = document.createElement('a');
-            a.href = '#' + id;
-            a.textContent = title;
-            a.className = 'theme-link';
+            // Fix image paths to point to our local web/images folder
+            html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_social_map_INSET\.png/g, 'images/T$1_social_map_FINAL.png');
+            html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_people_inset\.png/g, 'images/T$1_people_map.png');
+            html = html.replace(/\/Volumes\/.*?\/networks\/T(\d+)_organizations_inset\.png/g, 'images/T$1_organizations_map.png');
+            html = html.replace(/\/Volumes\/.*?\/networks\//g, 'images/');
             
-            const list = document.createElement('div');
-            list.className = 'narratives-list';
-            
-            group.appendChild(a);
-            group.appendChild(list);
-            navLinks.appendChild(group);
-            
-            currentThemeContainer = group;
-            currentThemeList = list;
-            
-            a.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-                
-                const isActive = group.classList.contains('active');
-                document.querySelectorAll('.theme-group').forEach(g => g.classList.remove('active'));
-                
-                if (!isActive) {
-                    group.classList.add('active');
-                }
-            });
-        } else if (heading.tagName === 'H3' && currentThemeList) {
-            const a = document.createElement('a');
-            a.href = '#' + id;
-            let shortTitle = title.replace(/^Canonical Narrative:\s*/i, '');
-            a.textContent = shortTitle;
-            a.className = 'narrative-link';
-            a.title = title;
-            
-            a.addEventListener('click', (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-                
-                document.querySelectorAll('.narrative-link').forEach(link => link.classList.remove('active'));
-                a.classList.add('active');
-            });
-            
-            currentThemeList.appendChild(a);
+            contentArea.innerHTML = html;
+        } else {
+            contentArea.innerHTML = '<p>Error: Report data not found.</p>';
         }
+    }
+
+    function renderTLDR() {
+        if (typeof tldrData !== 'undefined') {
+            let html = `<h2>TL;DR Summary</h2>`;
+            html += `<p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">${tldrData.high_level_summary}</p>`;
+            
+            tldrData.narratives.forEach(n => {
+                html += `
+                    <div class="tldr-card" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="margin-top: 0;">${n.title}</h3>
+                        <p><span class="badge" style="background: var(--accent-color); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">Impact Score: ${n.impact}</span></p>
+                        <p>${n.summary}</p>
+                        <div style="margin-top: 1rem;">
+                            <p style="margin-bottom: 0.5rem;"><strong>Top Entities:</strong></p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                ${n.entities.map(e => `<span style="background: rgba(255,255,255,0.1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">${e}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <p style="margin-bottom: 0.5rem;"><strong>Key Authors / Influencers:</strong></p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                ${n.authors.map(a => `<span style="background: rgba(56, 189, 248, 0.2); color: var(--accent-color); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">${a}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            contentArea.innerHTML = html;
+        } else {
+            contentArea.innerHTML = '<p>Error: TL;DR data not found.</p>';
+        }
+    }
+
+    function generateSidebar() {
+        const headings = contentArea.querySelectorAll('h2, h3');
+        navLinks.innerHTML = ''; // Clear existing
+        
+        let currentThemeContainer = null;
+        let currentThemeList = null;
+        
+        headings.forEach((heading, index) => {
+            const title = heading.textContent;
+            const id = 'heading-' + index;
+            heading.id = id; // Assign ID for anchor link
+            
+            if (heading.tagName === 'H2') {
+                const group = document.createElement('div');
+                group.className = 'theme-group';
+                
+                const a = document.createElement('a');
+                a.href = '#' + id;
+                a.textContent = title;
+                a.className = 'theme-link';
+                
+                const list = document.createElement('div');
+                list.className = 'narratives-list';
+                
+                group.appendChild(a);
+                group.appendChild(list);
+                navLinks.appendChild(group);
+                
+                currentThemeContainer = group;
+                currentThemeList = list;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+                    
+                    const isActive = group.classList.contains('active');
+                    document.querySelectorAll('.theme-group').forEach(g => g.classList.remove('active'));
+                    
+                    if (!isActive) {
+                        group.classList.add('active');
+                    }
+                });
+            } else if (heading.tagName === 'H3' && currentThemeList) {
+                const a = document.createElement('a');
+                a.href = '#' + id;
+                let shortTitle = title.replace(/^Canonical Narrative:\s*/i, '');
+                a.textContent = shortTitle;
+                a.className = 'narrative-link';
+                a.title = title;
+                
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+                    
+                    document.querySelectorAll('.narrative-link').forEach(link => link.classList.remove('active'));
+                    a.classList.add('active');
+                });
+                
+                currentThemeList.appendChild(a);
+            }
+        });
+    }
+
+    toggleViewBtn.addEventListener('click', () => {
+        isTLDR = !isTLDR;
+        toggleViewBtn.textContent = isTLDR ? 'Detailed View' : 'TL;DR';
+        toggleViewBtn.title = isTLDR ? 'Switch to Detailed View' : 'Switch to TL;DR Version';
+        render();
     });
+
+    // Initial render
+    render();
 
     // 3. Dark Mode Toggle
     darkModeToggle.addEventListener('click', () => {
