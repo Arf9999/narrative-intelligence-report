@@ -412,3 +412,23 @@ body.light-mode .moon-icon { display: block; }
 .report-content > * {
     animation: fadeIn 0.5s ease-out forwards;
 }
+
+/* TLDR Button Styles */
+#toggle-view-btn {
+    color: var(--text-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
+}
+
+#toggle-view-btn:hover {
+    background: var(--bg-color);
+    border-color: var(--accent-color);
+}
+
