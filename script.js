@@ -41,7 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 html += `
                     <div class="tldr-card" style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,0.1);">
                         <h3 style="margin-top: 0;">${n.title}</h3>
-                        <p><span class="badge" style="background: var(--accent-color); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">Impact Score: ${n.impact}</span></p>
+                        <p>
+                            <span class="badge" style="background: var(--accent-color); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">TM Freq: ${n.tm_freq}</span>
+                            <span class="badge" style="background: #10b981; color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-left: 0.5rem;">SM Freq: ${n.sm_freq}</span>
+                        </p>
                         <p>${n.summary}</p>
                         <div style="margin-top: 1rem;">
                             <p style="margin-bottom: 0.5rem;"><strong>Top Entities:</strong></p>
