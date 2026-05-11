@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 a.href = '#' + id;
                 a.textContent = title;
                 a.className = 'theme-link';
+                a.title = title;
                 
                 const list = document.createElement('div');
                 list.className = 'narratives-list';
