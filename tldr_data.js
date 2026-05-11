@@ -1,5 +1,5 @@
 const tldrData = {
-  "high_level_summary": "This TL;DR version provides a summarized view of the core narratives identified in the report, ordered by their frequency in media discourse.",
+  "high_level_summary": "This research maps the public conversation regarding **Oil and Gas Exploration and Exploitation in South Africa**, covering media and social discourse from **April 2022 to April 2026**. This TL;DR version provides a summarized view of the core narratives identified in the report, ordered by their frequency in media discourse.",
   "narratives": [
     {
       "title": "Energy transition must balance decarbonization with energy poverty and affordability.",
