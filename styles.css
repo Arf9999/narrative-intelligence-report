@@ -481,3 +481,14 @@ body.light-mode .moon-icon { display: block; }
     }
 }
 
+/* Map Explanations (Captions) */
+.report-content small {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: block;
+    margin-top: -1.5rem; /* Pull it closer to the image above */
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+

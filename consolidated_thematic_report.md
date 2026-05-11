@@ -76,15 +76,15 @@ The overall tone is **highly adversarial**. Language is accusatory and filled wi
 
 ![T1 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T1_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T1 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T1_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T1 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T1_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Gas is an essential transition fuel and should be expanded.
 
@@ -491,15 +491,15 @@ The overall tone is **highly adversarial**. Language is accusatory and filled wi
 
 ![T2 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T2_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T2 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T2_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T2 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T2_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Financial markets and corporate governance in energy are unreliable or misleading.
 
@@ -1166,15 +1166,15 @@ The Upstream Petroleum Resource Development Bill was approved on April 25th and 
 
 ![T3 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T3_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T3 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T3_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T3 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T3_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Energy planning must be transparent, evidence-based, and legally sound.
 
@@ -1744,15 +1744,15 @@ The Integrated Resource Plan (IRP) is frequently cited in the context of policy 
 
 ![T4 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T4_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T4 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T4_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T4 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T4_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Current clean energy policies are grossly inadequate for achieving meaningful climate mitigation.
 
@@ -2502,15 +2502,15 @@ No specific legal connections are identified or propagated within the provided s
 
 ![T5 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T5_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T5 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T5_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T5 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T5_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Environmental and social justice must guide energy and resource decisions.
 
@@ -2744,15 +2744,15 @@ No specific legal connections are identified or propagated within the provided s
 
 ![T6 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T6_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T6 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T6_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T6 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T6_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Environmental and social justice must guide energy and resource decisions.
 
@@ -3051,15 +3051,15 @@ No specific legal connections are identified or propagated within the provided s
 
 ![T7 Social Network Map (Inset)](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T7_social_map_INSET.png)
 
-*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection between social media accounts as well as their links to particular canonical narratives. The social account nodes are grouped into communities based on their interconnection and coloured accordingly. The connections are weighted equally by mentions in the case of inter-account connections, and by document count in the case of the account to narrative connections. These connections do not necessarily mean that the account is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T7 People Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T7_people_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ![T7 Organizations Inset Map](/Volumes/Lexar R/R_projects_local/narrative_intelligence_engine/projects/O_G_in_ZA/output/networks/T7_organizations_inset.png)
 
-*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*
+<small>*This map shows the connection of entities (people, organisations) with the canonical narratives, the edges are weighted by document count (i.e. the number of documents that mention the entity). These connections do not necessarily mean that the entity is advancing the narrative, merely that it is mentioned in connection to it.*</small>
 
 ### Canonical Narrative: Corporate and political interests undermine effective energy policy and community rights.
 
