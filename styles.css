@@ -432,3 +432,52 @@ body.light-mode .moon-icon { display: block; }
     border-color: var(--accent-color);
 }
 
+/* Mobile Scaling and Responsive Design */
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block !important;
+    }
+    
+    .sidebar {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        width: 280px;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 10px 0 15px -3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .app-container {
+        flex-direction: column;
+    }
+    
+    .app-header {
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background-color: var(--sidebar-bg);
+    }
+    
+    .content-wrapper {
+        padding: 1rem;
+    }
+    
+    .report-content {
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    /* Adjust tables for mobile */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+

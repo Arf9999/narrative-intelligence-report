@@ -292,4 +292,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
         }
     });
+
+    // 7. Mobile Menu Toggle
+    const menuToggleBtn = document.getElementById('menu-toggle-btn');
+    const sidebar = document.getElementById('sidebar');
+    
+    if (menuToggleBtn && sidebar) {
+        menuToggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sidebar.classList.toggle('active');
+        });
+        
+        // Close sidebar when clicking outside
+        document.addEventListener('click', (e) => {
+            if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== menuToggleBtn) {
+                sidebar.classList.remove('active');
+            }
+        });
+        
+        // Close sidebar when a link is clicked (on mobile)
+        const sidebarLinks = sidebar.querySelectorAll('a');
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove('active');
+                }
+            });
+        });
+    }
 });
