@@ -1,6 +1,9 @@
 ## Introduction & Summary
 
+This research maps the public conversation regarding **Oil and Gas Exploration and Exploitation in South Africa**, covering media and social discourse from **April 2022 to April 2026**.
+
 This analysis reveals a highly politicized and contentious discourse surrounding energy infrastructure and resource management. The conversation is characterized by deep skepticism towards established narratives, with multiple stakeholders vying for influence.
+
 
 **Key areas of contention include:**
 
