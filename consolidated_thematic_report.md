@@ -3464,9 +3464,10 @@ Legal connections include calls for civil action against the government to chall
 This project utilizes specialized AI to map the public conversation regarding oil and gas exploration and exploitation in South Africa. Rather than simply tracking keywords or sentiment, the engine identifies the specific **arguments and stances** (narratives) being promoted by different actors. By connecting these narratives to the people, organizations, and media outlets that propagate them, the project provides a forensic map of how strategic influence is exercised and how different groups coordinate their messaging across traditional news and social media.
 
 ### 0. Data Collection & Sourcing
-The raw media corpus is collected via **Brandwatch**, targeting multi-channel discourse within the South African (ZAF) geographic region. The following Boolean search string was used to ensure comprehensive coverage of the oil, gas, and energy legislative landscape:
+The raw media corpus is collected targeting multi-channel discourse within the South African region. The data was gathered using a keyword boolean search for media covering the period from 27 April 2022 until 24 April 2026.
 
-> `country:"ZAF" AND ("oil and gas" OR "oil & gas" OR petroleum OR "natural gas" OR LNG OR "fossil fuel*" OR "seismic survey*" OR "seismic blasting" OR "offshore exploration" OR "upstream gas" OR "upstream petroleum" OR "gas cliff") AND (legislat* OR regulat* OR MPRDA OR UPRDA OR UPRDB OR SANPC OR "National Petroleum Company" OR NEMA OR "Upstream Petroleum" OR "Gas Master Plan" OR IRP OR PASA OR NERSA OR "gas cliff" OR "supply cliff" OR "gas crisis" OR Pande OR Temane OR "methane-rich gas" OR MRG OR ROMPCO OR GasCo OR IGUA-SA OR court OR litigat* OR interdict* OR Makhanda OR SCA OR "Constitutional Court" OR "meaningful consultation" OR "environmental authorisation" OR DMRE OR Mantashe OR PetroSA OR Sasol OR TotalEnergies OR Shell OR "Impact Africa" OR "Searcher Geodata" OR Transnet OR SAOGA OR CEF OR "Green Connection" OR groundWork OR CER OR "Sustaining the Wild Coast" OR "Natural Justice" OR "Oceans Not Oil" OR LRC)`
+*Report generated on 11 May 2026.*
+
 
 ### 1. Data Ingestion & Manifesting
 The pipeline follows a **manifest-driven architecture**. Each project is defined by a central `manifest.json` which governs:
